@@ -1,0 +1,75 @@
+
+  .tabledetails {
+    font-family: "Montserrat" !important;
+    border-collapse: collapse !important;
+    width: 100% !important;
+    margin-bottom: 10px !important;
+    /* background-color: red !important; */
+  }
+  
+  @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+    .slot table,
+    .slot thead,
+    .slot tbody,
+    .slot th,
+    .slot td,
+    .slot tr {
+      display: block !important;
+    }
+    .slot thead tr {
+      position: absolute !important;
+      top: -9999px !important;
+      left: -9999px !important;
+    }
+  
+    .slot tr {
+      border: 1px solid #ccc !important;
+    }
+    .slot td {
+      /* Behave  like a "row" */
+      border: none !important;
+      border-bottom: 1px solid lightgray !important;
+      position: relative !important;
+      padding-left: 50% !important;
+      height: 20px !important;
+    }
+    .slot td:before {
+      /* Now like a table header */
+      content: attr(data-label) !important;
+  
+      position: absolute !important;
+      /* Top/left values mimic padding */
+      top: 6px !important;
+      left: 6px !important;
+      width: 45% !important;
+      padding-right: 10px !important;
+    }
+    .details td {
+      max-width: 300px !important;
+    }
+    .details .tddetails1 {
+      max-width: 300px !important;
+      white-space: pre-wrap !important;
+    }
+  }
+  
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+    .details td {
+      max-width: 200px !important;
+    }
+    .details .tddetails1 {
+      max-width: 100px !important;
+      white-space: pre-wrap !important;
+    }
+  }
+  @media only screen and (min-device-width: 280px) and (max-device-width: 653px) {
+    .details td {
+      max-width: 100px !important;
+      /* background-color: lawngreen !important; */
+    }
+    .details .tddetails1 {
+      max-width: 100px !important;
+      white-space: pre-wrap !important;
+    }
+  }
+  
